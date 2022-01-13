@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2? family= DM+Sans:wght@400;500;700 & display=swap');
+:root {
+  --blue: #004cdf;
+  --white: #f9f9f9;
+  --gray: #828282;
+  --gray-200: #333333;
+  --gray-400: #212121;
+  --dark: #171717;
+}
+* {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--white);
+}
+html {
+  font-size: 63.5%;
+}
+body {
+  background: var(--dark);
+  padding: 0 10vw;
+}
+section {
+  margin: 17rem 0;
+}
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.title {
+  font-size: 1.8rem;
+}
+p,
+.text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--gray);
+  text-align: center;
+}
+
+header {
+  padding-top: 3.5rem;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+header span {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+header ul li {
+  margin-left: 4.5rem;
+  font-size: 1.8rem;
+}
+
+main .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .header .informations h1 {
+  width: 60%;
+}
+main .header .informations p {
+  margin: 3.5rem 0;
+}
+.buttons a {
+  padding: 1.2rem 2.7rem;
+  background: var(--blue);
+}
+.buttons a:nth-child(2) {
+  margin-left: 1.5rem;
+  padding: 1.1rem 2.7rem;
+  background: transparent;
+  border: 1px solid var(--gray-200);
+}
+
+main #aboutMe p {
+  padding: 3rem 16rem 8rem;
+  line-height: 32px;
+  text-align: center;
+}
+main #aboutMe .contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+main #aboutMe .contact div {
+  width: 20rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #aboutMe .contact div img {
+  margin: 2rem;
+  background: var(--gray-200);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+main #projects ul,
+main #services ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+main #projects ul .column li:nth-child(even) {
+  margin-top: 3rem;
+}
+main #projects ul li,
+main #services ul li {
+  width: 30rem;
+  height: auto;
+  padding: 2.5rem;
+  background: var(--gray-200);
+
+  display: flex;
+  flex-direction: column;
+}
+main #projects ul li div {
+  width: 100%;
+  height: 13rem;
+  background: var(--gray-400);
+}
+main #projects ul li .title {
+  margin: 2rem 0 0.6rem;
+}
+
+main #services ul li {
+  border-bottom: 5px solid var(--blue);
+}
+main #services ul li img {
+  width: 7rem;
+}
+main #services ul li span {
+  font-size: 3.2rem;
+  width: 12rem;
+  margin-top: 4rem;
+}
+
+main #skills div {
+  display: flex;
+  justify-content: center;
+}
+main #skills div img {
+  margin-right: 3rem;
+  background: var(--gray-400);
+  padding: 3rem;
+}
+main #skills div img:nth-last-child(1) {
+  margin-right: 0;
+}
+
+footer{
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 1.8rem;
+}
+footer span{
+  color: var(--blue);
+}
+
+@media (min-width: 1500px){
+  body{
+    padding: 0 20vw;
+  }
+}
+
+@media (max-width: 1400px){
+  main #projects ul .column{
+    display: flex;
+    margin-bottom: 3rem;
+  }
+  main #projects ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main #projects ul .column li:nth-child(even) {
+    margin: 0 0 0 3rem 
+  }
+}
+@media (max-width: 1380px){
+  main #services ul{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main #services ul li{
+    margin: 3rem;
+  }
+}
+
+@media(max-width: 970px){
+  main #aboutMe p{
+    padding: 5rem;
+  }
+  main #aboutMe .contact{
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 930px){
+  main #projects ul .column{
+    flex-direction: column;
+    margin: 0;
+  }
+  main #projects ul .column li:nth-child(even){
+    margin: 3rem 0;
+  }
+}
+@media (max-width: 900px){
+  main .header img{
+    max-width: 40vw;
+  }
+  .buttons{
+    width: 55%;
+  }
+  .buttons a{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons a:nth-child(2){
+    margin: 2rem 0 0;
+  }
+}
+@media (max-width: 700px){
+  header ul li{
+    font-size: 1.4rem;
+  }
+  main .header{
+    flex-direction: column;
+    align-items: center;
+  }
+  main .header .informations{
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  main .header .informations p, .buttons, h1{
+    width: 100%;
+  }
+}
+@media (max-width: 600px){
+  header ul li{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -50px;
+  }
+  main #aboutMe p{
+    padding: 2rem;
+  }
+  main #skills div{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  main #skills div img{
+    margin: 0 0 3rem;
+  }
+}
+@media (max-width: 460px){
+  main #projects ul li{
+    max-width: 60vw
+  }
+}
+@media (max-width: 400px){
+  main #services ul li span{
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 400px){
+  main #services ul li span{
+    font-size: 2.4rem;
+  }
+}

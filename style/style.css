@@ -46,7 +46,6 @@ p,
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--gray);
-  text-align: center;
 }
 
 header {
@@ -177,9 +176,15 @@ footer span{
   color: var(--blue);
 }
 
-@media (min-width: 1500px){
+@media (min-width: 1700px){
   body{
     padding: 0 20vw;
+  }
+  main #projects ul .column:nth-child(2){
+    margin: 0 3rem;
+  }
+  main #projects ul li{
+    width: 25rem;
   }
 }
 

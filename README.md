@@ -17,5 +17,5 @@
   Esse projeto possui licença MIT. Para mais detalhes consulte o arquivo [LICENSE](LICENSE.md)
  *<p>#dailyFrontend</p>*
  
- ## Observações
+ ## 📌 Observações
  O Javascript desse projeto será implementado futuramente
